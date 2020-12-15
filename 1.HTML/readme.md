@@ -1,5 +1,3 @@
-# Homework-Codecamp5
-
 ## HTML
 
 1. สร้างหน้า index.html เป็น homepage
