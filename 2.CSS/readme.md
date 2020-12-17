@@ -77,6 +77,3 @@
     2. ให้ทำ animation show, hide
     3. ให้ทำ animation เคลื่อนที่
        > [slide57](./slide57)
-
-12. slide 35 ทำ Responsive page เป็น bootstrap [pimclick](https://www.pimclick.com/contact-digital-agency-bangkok/)
-    > [bootstrap](./bootstrap)
