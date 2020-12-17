@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>pimclick responsive lab</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <form>
+        <div class="form">
+          <div class="top-form">
+            <div class="inner-form">
+              <div class="label">Your Name (required)</div>
+              <input type="text" />
+            </div>
+            <div class="inner-form">
+              <div class="label">Your Email (required)</div>
+              <input type="text" />
+            </div>
+          </div>
+          <div class="middle-form">
+            <div class="inner-form">
+              <div class="label">Subject</div>
+              <input type="text" />
+            </div>
+          </div>
+          <div class="middle-form">
+            <div class="inner-form">
+              <div class="label">Your Message</div>
+              <textarea name="" id="" cols="30" rows="10"></textarea>
+            </div>
+          </div>
+          <div class="bottom-form">
+            <div class="content">
+              <input type="submit" class="btn-Send" value="SEND" />
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: "Montserrat", sans-serif;
+        color: #636363;
+        font-size: 18px;
+        font-weight: 400;
+        background-color: #fff;
+      }
+
+      .wrapper {
+        width: 60%;
+        margin: 5px auto 0;
+        padding: 180px 65px 60px 65px;
+        background-color: #fff;
+        border-radius: 20px;
+        box-shadow: 2px 2px 6px 2px #ccc;
+      }
+      .content {
+        text-align: center;
+        color: #000;
+      }
+      .content h1 {
+        font-weight: bold;
+        font-size: 3.5rem;
+      }
+      .content span {
+        color: red;
+      }
+      .form {
+        width: 100%;
+        margin: 25px 0;
+      }
+
+      .form::before,
+      .form::after {
+        content: "Contact us";
+        position: absolute;
+        top: 75px;
+        left: calc(50% - 235px);
+        width: 100%;
+        font-family: Montserrat, sans-serif;
+        font-weight: 700;
+        font-size: 57px;
+        color: #2b2d2f;
+        letter-spacing: -4px;
+      }
+      .form::after {
+        content: " today";
+        color: #fe214c;
+        left: calc(50% + 59px);
+      }
+
+      .top-form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 20px;
+      }
+      .top-form,
+      .middle-form,
+      .bottom-form {
+        width: 100%;
+        min-height: 65px;
+        margin: 15px 0;
+        overflow: hidden;
+      }
+      .form input[type="text"],
+      .form textarea {
+        font-size: 1.4rem;
+        color: #999;
+        padding: 10px 10px;
+        box-sizing: border-box;
+        width: 100%;
+        border: 1px solid #999;
+        border-radius: 5px;
+        outline: none;
+      }
+      .form .label {
+        margin-bottom: 10px;
+        text-transform: capitalize;
+      }
+      .top-form .inner-form {
+        display: inline-block;
+      }
+      .middle-form {
+        clear: both;
+      }
+
+      .content .btn-Send {
+        text-align: center;
+        padding: 5px 40px 5px 40px;
+        font-size: 2rem;
+        color: #fff;
+        background-color: #e91126;
+        border: none;
+        border-radius: 5px;
+        justify-content: center;
+      }
+      @media only screen and (max-width: 800px) {
+        .top-form {
+          display: grid;
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </body>
+</html>
